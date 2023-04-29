@@ -15,6 +15,7 @@ Windows 10 (21H2)
 
  **** Setting up a Virtual Machine (VM) in Microsoft Azure, and setting it to run Windows 10. ****
 We will not be covering this as it's a simple process to execute.  However, what will be pointed out is that when creating the VM, we need it to have more than 1 vCPU.  For this tutorial, I have chosen East US for region and Standard_E2s_v3 - 2 vCPUs, and we must allow it to create a new Virtual Network (Vnet).
+<img src=https://i.imgur.com/ZF809zc.png>
 
 Now that we have our VM up and running, we must access it through a remote desktop application.  I'm running linux so I had to download one, but that's irrelevant because we will be doing this process in the VM we created.  In this case, mine is named CCAZF-SERVER [Insert photo of vm]
   
