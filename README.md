@@ -21,9 +21,12 @@ Now that we have our VM up and running, we must access it through a remote deskt
   
   **** Prerequisites for installing OSTicket on any host machine ****
 A lot of what we will be using for this process can be found here https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-keep that tab open, we will be coming back to this. [Insert photo of page]
+keep that tab open, we will be coming back to this. 
+<img src=https://i.imgur.com/7aPixaC.png>
+<img src=https://i.imgur.com/Hstt3Pc.png>
 
 1}  First, we must enable IIS in Windows along with CGI.  To do this, we go to Start>Settings>Apps>Optional Features>More Windows Features>Internet Information Services>World Wide Web Services>Application Development Features>CGI.  BE SURE TO TICK THE BOXES BEFORE OPENING THE FOLDERS.  If your screen looks like mine you're on the right track.
+<img src=https://i.imgur.com/jjSPuvZ.png>
 
 2}  Now, let's go back and download "PHPManagerForIIS_V1.5.0.msi".  Go ahead and install it.  If it fails, that means you skipped my first step.  For shame, slow it down!
 
