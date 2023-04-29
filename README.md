@@ -35,7 +35,21 @@ keep that tab open, we will be coming back to this. [Insert photo of page]
 6}  Step 6, we install "mysql-5.5.62-win32.msi".  We will go ahead and launch the Configuration Wizard once this installation completes. [INSERT PHOTO]
 We want to select "Standard Configuration".  Go ahead and make up a password.  Let's go with "Password1" [INSERT PHOTO]
 
-7}  Search for "IIS" from the "Start" menu.  Right click>Run as administrator.  Double click "PHP Manager" once we get it going.  
+7}  Search for "IIS" from the "Start" menu.  Right click>Run as administrator.  Double click "PHP Manager" once we get it going.  Click "Register new PHP version", as the program is telling us that's what we need.  Browse your way to "php-cgi"[INSERT PHOTO], click [OK], and then it should look like [INSERT PHOTO]  Click on our server name from under the "Connections" list, and then on the right side of the window you can restart the server.  Do it. [INSERT PHOTO]
+
+8}  Now we can finally install osTicket.  Download the .zip file "osTicket-v1.15.8.zip" and extract it, then put the "upload" folder into c\inetpub\wwwroot.  [INSERT PHOTOs]  Rename "upload" to "osTicket".  [INSERT PHOTO]
+
+Reload IIS again. On the left side of the window, navigate to Sites>Default Web Site>osTicket and click on the right side of the window where it says "Browse *:80 (http)"  It should open us up to a "Thank You" tab.
+
+9}  We're going to fill in the "X"s.  Go back into IIS, and from where we left it, we can run the "PHP Manager".  We have to change some options under "Enable or disable an extension".  Click that.  Right click and "enable" the three following dlls:  "php_imap.dll", "php_intl.dll", and "php_opcache.dll".  Go ahead and refresh osTicket in your browser.  Youll see more checks now. [INSERT PHOTO]  Browse your way to "C:\inetpub\wwwroot\osTicket\include" and rename ost-sampleconfig.php to ost-config.php[INSERT PHOTO]  From there, Right click>properties>Security>[Advanced]  [Disable inhertance], Remove all inherited permissions from this object.  Then we [add]>"Select a Principal", and type "everyone" in the open type field, click [Check names], then [OK]  Check the "Full Control" box, then [OK],  then [Apply], then [OK]. then [OK] again.
+
+10} Now we can finally hit [Continue] on the osTicket screen in our browser.  Fill the fields out to your needs, in my case I'm setting up a help desk so the email address is the only thing that has to be real, but you must not forget the info you put in. [INSERT PHOTO]
+
+11} Now we will download and install "HeidiSQL" by opening the link from the "installation files" tab and follow along until we get a running .exe.  Go ahead and install the program as you would anything else.  Run it, click [New] as soon as you see it.  User "root", Password "Password1", then click [Open].  Now we go back to the osTicket window and fill in the same name and password on the screen we left it on.  Now in HeidiSQL we right click "Unnamed" and then "Create new>Database".  For Name I'm putting in osTicket, then [OK].
+
+12} Now that we have a database made for osTicket we can enter it's name in the only empty field we left in the browser. [INSERT IMAGE].  Install it.  You'll be greeted with a "Congratulations" screen if all was done correctly.
+
+13} For cleanup purposes we're going to navigate to C:\inetpub\wwwroot\osTicket and delete the "Setup" folder [IMAGE]  Now we go to C:\inetpub\wwwroot\osTicket\include and seek out the "ost-config.php". open up "properties" as we're going to change it's permissions back.  Go to "Security>advanced" again, "Audit", type "Everyone" Again, then set it to read and read & execute.  [Apply] and [OK].
 Item 3
 Item 4
 Item 5
