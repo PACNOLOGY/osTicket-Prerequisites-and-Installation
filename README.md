@@ -114,3 +114,5 @@ Install it.  You'll be greeted with a "Congratulations" screen if all was done c
 Now we go to C:\inetpub\wwwroot\osTicket\include and seek out the "ost-config.php". open up "properties" as we're going to change it's permissions back.  Go to "Security>advanced" again, "Audit", type "Everyone" Again, then set it to read and read & execute.  [Apply] and [OK].
 
 You should now be able to login to osTicket as an admin.  A lengthy process, but this is something typically used for businesses with networks as well as other complexities, as opposed to something you would need to be setting up at home.
+
+Now that we've done all that, it's time for [osTicket: Post-Installation Configuration(WIP)](https://github.com/PACNOLOGY/osTicket---Post-Install-Configuration).  See you there!
