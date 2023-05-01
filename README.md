@@ -29,12 +29,17 @@ keep that tab open, we will be coming back to this.
 <img src=https://i.imgur.com/jjSPuvZ.png>
 
 2}  Now, let's go back and download "PHPManagerForIIS_V1.5.0.msi".  Go ahead and install it.  If it fails, that means you skipped my first step.  For shame, slow it down!
+<img src=https://i.imgur.com/RPRqgqQ.png>
 
 3}  Thirdly, we download and install "rewrite_amd64-en-US.msi"
 
-4}  Fouth Step, we create our own directory.  "C:\PHP".  Then we go and download "php-7.3.8-nts-Win32-VC15-x86.zip" from our installation files tab.  You will have to manually tell edge to "keep" the file in order for it to actually download.  Extract it to our new "PHP" folder. [INSERT PHOTOS]
+4}  Fouth Step, we create our own directory.  "C:\PHP".
+<img src=https://i.imgur.com/uqifqK3.png>
+Then we go and download "php-7.3.8-nts-Win32-VC15-x86.zip" from our installation files tab.  You will have to manually tell edge to "keep" the file in order for it to actually download.  Extract it to our new "PHP" folder. 
+<img src=https://i.imgur.com/IHsZ264.png>
 
-5}  Now we will download and install "VC_redist.x86.exe" [INSERT PHOTO]
+5}  Now we will download and install "VC_redist.x86.exe"
+<img src=https://i.imgur.com/u1SHb7I.png>
 
 6}  Step 6, we install "mysql-5.5.62-win32.msi".  We will go ahead and launch the Configuration Wizard once this installation completes. [INSERT PHOTO]
 We want to select "Standard Configuration".  Go ahead and make up a password.  Let's go with "Password1" [INSERT PHOTO]
